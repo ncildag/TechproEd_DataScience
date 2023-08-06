@@ -1,0 +1,3796 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='MyFirstTrainingProject_16836628645870' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Orders (Sample - Superstore (3))' inline='true' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sample - Superstore (3)' name='excel-direct.0tscwfx0s6etv2103h6im195459u'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/user/Downloads/Sample - Superstore (3).xls' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0tscwfx0s6etv2103h6im195459u' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Order Date' ordinal='2' />
+            <column datatype='date' name='Ship Date' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Segment' ordinal='7' />
+            <column datatype='string' name='Country' ordinal='8' />
+            <column datatype='string' name='City' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='integer' name='Postal Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='string' name='Product ID' ordinal='13' />
+            <column datatype='string' name='Category' ordinal='14' />
+            <column datatype='string' name='Sub-Category' ordinal='15' />
+            <column datatype='string' name='Product Name' ordinal='16' />
+            <column datatype='real' name='Sales' ordinal='17' />
+            <column datatype='integer' name='Quantity' ordinal='18' />
+            <column datatype='real' name='Discount' ordinal='19' />
+            <column datatype='real' name='Profit' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0tscwfx0s6etv2103h6im195459u' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Order Date' ordinal='2' />
+            <column datatype='date' name='Ship Date' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Segment' ordinal='7' />
+            <column datatype='string' name='Country' ordinal='8' />
+            <column datatype='string' name='City' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='integer' name='Postal Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='string' name='Product ID' ordinal='13' />
+            <column datatype='string' name='Category' ordinal='14' />
+            <column datatype='string' name='Sub-Category' ordinal='15' />
+            <column datatype='string' name='Product Name' ordinal='16' />
+            <column datatype='real' name='Sales' ordinal='17' />
+            <column datatype='integer' name='Quantity' ordinal='18' />
+            <column datatype='real' name='Discount' ordinal='19' />
+            <column datatype='real' name='Profit' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U9995:no:A1:U9995:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Row ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sub-Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sub-Category</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Row ID]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Orders' datatype='table' name='[__tableau_internal_object_id__].[Orders_3DA964402F8545E3A5DBA62755592450]' role='measure' type='quantitative' />
+      <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Category,Sub-Category)' hidden='true' name='[Action (Category,Sub-Category)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Category]' />
+          <groupfilter function='level-members' level='[Sub-Category]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Country,Region,State)' hidden='true' name='[Action (Country,Region,State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+          <groupfilter function='level-members' level='[Region]' />
+          <groupfilter function='level-members' level='[State]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='Data/Datenquellen/Orders (Sample - Superstore (3)).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/09/2023 08:06:43 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Orders (Sample - Superstore (3))' increment-value='%null%' refresh-type='create' rows-inserted='9994' timestamp-start='2023-05-09 20:06:42.541' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Row ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Row ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Row ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Orders</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9994</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3173</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Order Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Orders</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1392</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ship Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Ship Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ship Date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Orders</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1487</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ship Mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ship Mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ship Mode</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer ID</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1048</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1048</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Segment</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>500</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Postal Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Postal Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Postal Code</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Orders</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>610</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product ID</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2051</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sub-Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sub-Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sub-Category</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product Name</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2025</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Orders</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3481</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Orders</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Discount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Discount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Discount</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Orders</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Orders</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3859</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_3DA964402F8545E3A5DBA62755592450]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Region:nk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]:1&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Region:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Central&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;West&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;South&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;East&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:City:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Amarillo&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Baltimore&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Bozeman&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cary&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Clinton&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cuyahoga Falls&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Durham&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Fargo&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Glendale&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Hampton&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Huntington Beach&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Knoxville&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lawton&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Loveland&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Melbourne&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Monroe&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;New Rochelle&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Omaha&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Pearland&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Portage&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Rio Rancho&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Saint Peters&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Santa Clara&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Summerville&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Troy&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Watertown&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;York&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aberdeen&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Athens&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Billings&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Burlington&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Chicago&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Coppell&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Denver&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Elyria&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Frisco&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Greenwood&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Hillsboro&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jonesboro&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lakewood&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lodi&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Marietta&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Minneapolis&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Muskogee&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Norwich&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Palm Coast&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Plantation&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Redmond&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Round Rock&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;San Jose&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Southaven&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Thomasville&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Virginia Beach&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Wichita&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Alexandria&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Aurora&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bolingbrook&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Canton&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Citrus Heights&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Costa Mesa&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Dover&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Eugene&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gastonia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hackensack&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Homestead&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kenosha&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Las Cruces&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Longview&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mason&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Missoula&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;New Albany&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Odessa&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pasadena&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pompano Beach&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Renton&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Saint Charles&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sandy Springs&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Springfield&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tinley Park&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Warwick&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Woodland&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Antioch&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Baytown&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Broken Arrow&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Chandler&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Colorado Springs&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Davis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Eau Claire&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fort Collins&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Grand Prairie&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Helena&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Inglewood&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;La Quinta&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lehi&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Madison&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Meridian&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Moreno Valley&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Niagara Falls&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Orland Park&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Perth Amboy&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pueblo&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Rock Hill&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Salt Lake City&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Seattle&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tamarac&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Twin Falls&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;West Allis&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Anaheim&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bangor&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Brentwood&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cedar Hill&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Clovis&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dallas&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Eagan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Farmington&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Glenview&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Harlingen&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Huntsville&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;La Crosse&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Layton&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Lowell&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Memphis&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Montebello&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;New York City&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ontario&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Pembroke Pines&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Portland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Riverside&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Saint Petersburg&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Santa Fe&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sunnyvale&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tucson&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Waukesha&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Yucaipa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Allen&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Austin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bossier City&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Carlsbad&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Clarksville&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cottage Grove&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Draper&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Evanston&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Georgetown&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Hagerstown&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Hoover&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Kent&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Las Vegas&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lorain&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mcallen&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Missouri City&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;New Bedford&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Oklahoma City&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Pasco&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Port Arthur&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Revere&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Saint Cloud&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sanford&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sterling Heights&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Toledo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Woodstock&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Arvada&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bethlehem&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bullhead City&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Chester&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Conway&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Delray Beach&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Elkhart&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Fremont&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Greensboro&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Hickory&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jefferson City&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lakeland&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Little Rock&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Maple Grove&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Milford&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Murray&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;North Las Vegas&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Oxnard&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Plainfield&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Redding&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Roseville&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;San Francisco&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Smyrna&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Texas City&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Vancouver&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Wheeling&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Abilene&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Atlanta&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bloomington&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Caldwell&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Chico&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Coral Gables&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Des Moines&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Encinitas&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Gaithersburg&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Gresham&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Holland&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jupiter&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lancaster&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Logan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Marion&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Miramar&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Naperville&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Oak Park&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Park Ridge&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Pleasant Grove&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Redondo Beach&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Royal Oak&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;San Luis Obispo&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sparks&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Thornton&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Visalia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Wilmington&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Arlington&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bellevue&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Buffalo&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Chattanooga&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Concord&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Decatur&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;El Cajon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Franklin&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Greeley&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hesperia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jacksonville&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Lake Elsinore&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Linden&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mansfield&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Middletown&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mount Vernon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Norman&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Overland Park&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pico Rivera&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Rapid City&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Rome&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;San Clemente&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sioux Falls&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tempe&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Vacaville&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Westland&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Allentown&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Avondale&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bowling Green&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Carol Stream&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cleveland&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Covington&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dublin&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Everett&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Gilbert&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Haltom City&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Hot Springs&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kirkwood&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Laurel&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Los Angeles&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Medford&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mobile&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;New Brunswick&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Olathe&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Passaic&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Port Orange&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Richardson&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Saint Louis&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Santa Ana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Stockton&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Torrance&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Waterbury&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Woonsocket&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Apopka&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Beaumont&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Broomfield&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Chapel Hill&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Columbia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Daytona Beach&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Edinburg&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fort Lauderdale&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Grand Rapids&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hempstead&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Iowa City&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lafayette&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Leominster&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Malden&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mesa&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Morgan Hill&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Noblesville&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Orlando&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pharr&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Quincy&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Rockford&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;San Angelo&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sheboygan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tampa&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tyler&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;West Jordan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Apple Valley&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bedford&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Brownsville&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Charlotte&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Columbus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dearborn&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Edmond&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Fort Worth&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Grapevine&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Henderson&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Irving&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Laguna Niguel&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Lewiston&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Manchester&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mesquite&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Morristown&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Norfolk&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ormond Beach&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Philadelphia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Raleigh&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Rockville&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;San Antonio&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Shelton&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Taylor&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Urbandale&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;West Palm Beach&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Arlington Heights&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bellingham&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Buffalo Grove&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Chesapeake&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Conroe&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Deer Park&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;El Paso&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Freeport&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Green Bay&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Hialeah&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jamestown&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Lake Forest&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Lindenhurst&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Manteca&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Midland&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Murfreesboro&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;North Charleston&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Owensboro&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Pine Bluff&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Reading&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Romeoville&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;San Diego&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Skokie&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Texarkana&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Vallejo&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Westminster&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Asheville&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Beverly&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Burbank&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cheyenne&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Coon Rapids&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Deltona&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Elmhurst&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Fresno&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Greenville&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Highland Park&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Johnson City&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lakeville&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Littleton&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Margate&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Milwaukee&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Murrieta&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;North Miami&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Palatine&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Plano&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Redlands&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Roswell&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;San Gabriel&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;South Bend&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Colony&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Vineland&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Whittier&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Andover&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bartlett&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bridgeton&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cedar Rapids&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Coachella&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Danbury&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;East Orange&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Fayetteville&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Goldsboro&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Harrisonburg&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Independence&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;La Mesa&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;League City&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lubbock&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mentor&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Montgomery&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Newark&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Orange&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pensacola&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Providence&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rochester&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Salem&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Santa Maria&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Superior&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tulsa&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wausau&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yuma&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Altoona&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bakersfield&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Boynton Beach&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Carrollton&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Clifton&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cranston&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dubuque&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Fairfield&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Gladstone&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Hamilton&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Houston&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kissimmee&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Lawrence&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Louisville&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Medina&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Modesto&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;New Castle&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Olympia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Paterson&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Port Saint Lucie&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Richmond&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Saint Paul&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Santa Barbara&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Suffolk&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Trenton&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Waterloo&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Yonkers&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Akron&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Atlantic City&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Boca Raton&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Camarillo&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Chula Vista&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Coral Springs&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Des Plaines&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Englewood&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Garden City&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Grove City&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hollywood&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Keller&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lansing&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Long Beach&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Marlborough&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mishawaka&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Nashua&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Oakland&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Parker&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Pocatello&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Redwood City&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Sacramento&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;San Marcos&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Spokane&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Thousand Oaks&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Waco&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Wilson&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Appleton&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Belleville&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Bryan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Charlottesville&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Commerce City&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Dearborn Heights&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Edmonds&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Frankfort&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Great Falls&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hendersonville&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jackson&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Lake Charles&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Lincoln Park&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Manhattan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Miami&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mount Pleasant&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Normal&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Oswego&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Phoenix&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Rancho Cucamonga&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Rogers&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;San Bernardino&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sierra Vista&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Temecula&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Utica&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Westfield&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ann Arbor&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bayonne&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bristol&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Champaign&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;College Station&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Danville&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;East Point&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Florence&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Grand Island&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hattiesburg&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Indianapolis&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;La Porte&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Macon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Meriden&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Moorhead&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Newport News&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Orem&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Peoria&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Provo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Rochester Hills&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Salinas&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Scottsdale&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tallahassee&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tuscaloosa&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Waynesboro&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Albuquerque&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Auburn&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Boise&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cambridge&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cincinnati&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Corpus Christi&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Detroit&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Escondido&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Garland&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Gulfport&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Holyoke&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Kenner&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Laredo&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Longmont&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Marysville&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mission Viejo&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Nashville&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Oceanside&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Parma&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Pomona&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Reno&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Saginaw&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;San Mateo&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Springdale&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Tigard&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Warner Robins&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Woodbury&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Switzerland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Orders' id='Orders_3DA964402F8545E3A5DBA62755592450'>
+            <properties context=''>
+              <relation connection='excel-direct.0tscwfx0s6etv2103h6im195459u' name='Orders' table='[Orders$]' type='table'>
+                <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Row ID' ordinal='0' />
+                  <column datatype='string' name='Order ID' ordinal='1' />
+                  <column datatype='date' name='Order Date' ordinal='2' />
+                  <column datatype='date' name='Ship Date' ordinal='3' />
+                  <column datatype='string' name='Ship Mode' ordinal='4' />
+                  <column datatype='string' name='Customer ID' ordinal='5' />
+                  <column datatype='string' name='Customer Name' ordinal='6' />
+                  <column datatype='string' name='Segment' ordinal='7' />
+                  <column datatype='string' name='Country' ordinal='8' />
+                  <column datatype='string' name='City' ordinal='9' />
+                  <column datatype='string' name='State' ordinal='10' />
+                  <column datatype='integer' name='Postal Code' ordinal='11' />
+                  <column datatype='string' name='Region' ordinal='12' />
+                  <column datatype='string' name='Product ID' ordinal='13' />
+                  <column datatype='string' name='Category' ordinal='14' />
+                  <column datatype='string' name='Sub-Category' ordinal='15' />
+                  <column datatype='string' name='Product Name' ordinal='16' />
+                  <column datatype='real' name='Sales' ordinal='17' />
+                  <column datatype='integer' name='Quantity' ordinal='18' />
+                  <column datatype='real' name='Discount' ordinal='19' />
+                  <column datatype='real' name='Profit' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_513296D34CDC4CE7B1E442E1AC3178AB]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Combo' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Combo' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action2_4EBF238BC414445BA9BCAE251E98DC6A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 4' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action3_B036CAAE35DD49A0A8E0DDE9EE46805E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Assingment_2' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Assingment_2' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Assigment_5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='integer' name='[Quantity]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Quantity]' derivation='Sum' name='[sum:Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='auto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Ship Mode:nk]' />
+              <wedge-size column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Quantity:qk]' />
+              <size column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Quantity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='off' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='10' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1CFAF9E0-7FCC-4952-9CA0-84894C7790D6}' />
+    </worksheet>
+    <worksheet name='Assignment'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk] + [federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk])</rows>
+        <cols>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Category:nk]</cols>
+      </table>
+      <simple-id uuid='{11D73EC8-628A-4DAA-B7FC-CDE32171C1EE}' />
+    </worksheet>
+    <worksheet name='Assignment_3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Sales])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Sub-Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]</rows>
+        <cols>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk]</cols>
+      </table>
+      <simple-id uuid='{ACCA6B20-C5AC-4528-8286-E2440A2E64B5}' />
+    </worksheet>
+    <worksheet name='Assignment_6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]' included-values='in-range-or-null'>
+            <min>-25729.35630000001</min>
+            <max>76381.387100000036</max>
+          </filter>
+          <slices>
+            <column>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Longitude (generated)]' field-type='quantitative' max='-7008299.3087581601' min='-14945791.470833899' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Latitude (generated)]' field-type='quantitative' max='6863678.4955742201' min='2327968.4859117679' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Region:nk]' />
+              <lod column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:State:nk]' />
+              <lod column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Country:nk]' />
+              <lod column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]' />
+              <geometry column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Latitude (generated)]</rows>
+        <cols>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{BC8DE5EF-A7D7-46EE-BD31-B0970F476B9F}' />
+    </worksheet>
+    <worksheet name='Assignment_7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' included-values='in-range'>
+            <min>256368.0</min>
+            <max>256368.16099999982</max>
+          </filter>
+          <slices>
+            <column>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:City:nk]' />
+              <lod column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Country:nk]' />
+              <lod column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:State:nk]' />
+              <lod column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Region:nk]' />
+              <lod column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' />
+              <geometry column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Latitude (generated)]</rows>
+        <cols>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{2A626133-54B4-4595-B348-5F64D8D03AF2}' />
+    </worksheet>
+    <worksheet name='Assingment_2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk]'>
+            <groupfilter function='level-members' level='[none:Sub-Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk] + [federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk])</rows>
+        <cols>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk]</cols>
+      </table>
+      <simple-id uuid='{6658B895-7AF0-4DF9-9F49-12376421E842}' />
+    </worksheet>
+    <worksheet name='Color_Stepped'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]' num-steps='2' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]</rows>
+        <cols>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Hello Sub-Category: </run>
+              <run bold='true'><![CDATA[<[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Profit: </run>
+              <run bold='true'><![CDATA[<[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk]</field>
+                      <field>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Phones&quot;</value>
+                    <value>44515.730599999995</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{04996085-B26D-46B4-B6D5-DDF6458FBA78}' />
+    </worksheet>
+    <worksheet name='Combo'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' scope='rows' value='#f1ce63' />
+            <format attr='stroke-size' scope='rows' value='4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk] + [federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk])</rows>
+        <cols>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Category:nk]</cols>
+      </table>
+      <simple-id uuid='{38947107-F07E-4650-9B93-F9D59E04DA95}' />
+    </worksheet>
+    <worksheet name='Filter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Customer Name:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Sales])' function='order' user:ui-marker='order'>
+                <groupfilter expression='ENDSWITH([Customer Name], &apos;s&apos;)' function='filter' user:ui-enumeration='inclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='s' user:ui-pattern_type='ends-with'>
+                  <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                    <groupfilter function='level-members' level='[none:Customer Name:nk]' />
+                    <groupfilter function='member' level='[none:Customer Name:nk]' member='%null%' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' included-values='all' />
+          <slices>
+            <column>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Customer Name:nk]</column>
+            <column>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Customer Name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{311BF548-6D8C-41BC-8A45-BAE1F587C99B}' />
+    </worksheet>
+    <worksheet name='Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Longitude (generated)]' field-type='quantitative' max='-7134432.7690936672' min='-14206738.130375601' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Latitude (generated)]' field-type='quantitative' max='8480410.1360346917' min='680347.49174448219' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Region:nk]' />
+              <geometry column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Geometry (generated)]' />
+              <lod column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Country:nk]' />
+              <lod column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:State:nk]' />
+              <lod column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Latitude (generated)]</rows>
+        <cols>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{10D8A7AC-2EAF-44E5-91F7-62750F6745A0}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Region:nk] / [federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk])</rows>
+        <cols>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{000BAC50-7CE8-4CE0-B288-696E7327EDB5}' />
+    </worksheet>
+    <worksheet name='Sheet 14'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Category:nk]</rows>
+        <cols>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{51E2E55E-3B8C-4ED6-AD92-CDE6A74BADA9}' />
+    </worksheet>
+    <worksheet name='Sheet 15'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Quarter-Trunc' name='[tqr:Order Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]</rows>
+        <cols>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[tqr:Order Date:qk]</cols>
+      </table>
+      <simple-id uuid='{A603F21A-771B-4913-9134-11E93267A534}' />
+    </worksheet>
+    <worksheet name='Sheet 16'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1E46B91D-7EFB-42DF-B040-433DA65FA97C}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Category:nk]'>
+            <groupfilter function='level-members' level='[none:Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' palette='green_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]</rows>
+        <cols>([federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Category:nk] / [federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Sub-Category:nk])</cols>
+      </table>
+      <simple-id uuid='{992F1601-8436-4B08-AB2B-985226BF6519}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Orders (Sample - Superstore (3))' name='federated.03qxypk0ho8tie1c1pjlv0kv2dhv' />
+      </datasources>
+      <datasource-dependencies datasource='federated.03qxypk0ho8tie1c1pjlv0kv2dhv'>
+        <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+        <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98230' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='885'>
+            <zone h='98230' id='5' type-v2='layout-basic' w='89702' x='468' y='885'>
+              <zone h='98230' id='3' name='Map' w='44851' x='468' y='885'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49115' id='9' name='Sheet 4' w='44851' x='45319' y='885'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49115' id='11' name='Color_Stepped' w='44851' x='45319' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98230' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='885'>
+              <zone h='11726' id='8' name='Map' pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Region:nk]' type-v2='color' w='9362' x='90170' y='885'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7190' id='10' name='Sheet 4' pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' type-v2='color' w='9362' x='90170' y='12611'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7190' id='12' name='Color_Stepped' pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]' type-v2='color' w='9362' x='90170' y='19801'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11947' id='17' name='Sheet 4' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Category:nk]' type-v2='filter' values='database' w='9362' x='90170' y='26991'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98230' id='18' param='vert' type-v2='layout-flow' w='99064' x='468' y='885'>
+                <zone fixed-size='280' h='98230' id='3' is-fixed='true' name='Map' w='44851' x='468' y='885'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11726' id='8' name='Map' pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Region:nk]' type-v2='color' w='9362' x='90170' y='885'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11947' id='17' mode='checkdropdown' name='Sheet 4' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Category:nk]' type-v2='filter' values='database' w='9362' x='90170' y='26991'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49115' id='9' is-fixed='true' name='Sheet 4' w='44851' x='45319' y='885'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7190' id='10' name='Sheet 4' pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' type-v2='color' w='9362' x='90170' y='12611'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49115' id='11' is-fixed='true' name='Color_Stepped' w='44851' x='45319' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7190' id='12' name='Color_Stepped' pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]' type-v2='color' w='9362' x='90170' y='19801'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{55FE2EC0-B749-4AC8-A202-AF343F39C412}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Filter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='pattern' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Customer Name:nk]' type='filter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4215A82E-6FC2-4C78-ACD8-0B8ECE679EEF}' />
+    </window>
+    <window class='worksheet' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{86C4A5B3-A06A-4B28-92C2-944B82558A46}' />
+    </window>
+    <window class='worksheet' name='Color_Stepped'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{27133483-2DE2-4275-AD57-06AA09182215}' />
+    </window>
+    <window class='worksheet' name='Combo'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E5DC28D8-5F65-4100-A3E4-95825196851A}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6E095950-5A88-46BD-8BC6-4E9039EE979E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Color_Stepped'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{7011779D-0021-44F1-8AA1-93F2064A976B}' />
+    </window>
+    <window class='worksheet' name='Assignment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3F3D2E23-6BE6-4544-A83E-40A5AE1355B1}' />
+    </window>
+    <window class='worksheet' name='Assingment_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{56262A23-EA72-43BD-B88A-26D1B952C837}' />
+    </window>
+    <window class='worksheet' name='Assignment_3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{97B8704B-CD68-4947-8C74-3C16E2A2335C}' />
+    </window>
+    <window class='worksheet' name='Assigment_5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Ship Mode:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Quantity:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6EFD2F51-AF10-4483-A7BF-C85B636C616E}' />
+    </window>
+    <window class='worksheet' name='Assignment_6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Profit:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='1' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{90C4E753-3B94-458E-86AF-211E421C22B7}' />
+    </window>
+    <window class='worksheet' name='Assignment_7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[sum:Sales:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.03qxypk0ho8tie1c1pjlv0kv2dhv].[none:City:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CCFB0F89-0084-4B82-83FC-758E5BC45788}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{66DAEE28-79EC-4265-B191-383CD0245F74}' />
+    </window>
+    <window class='worksheet' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4215FD89-A542-40A7-A5DC-BA955A6E4A53}' />
+    </window>
+    <window class='worksheet' name='Sheet 15'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{546113CD-CDFA-41D3-A003-1F69E2984F64}' />
+    </window>
+    <window class='worksheet' name='Sheet 16'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3C6A3605-BC2F-42FE-8BA7-7D443ACE6145}' />
+    </window>
+  </windows>
+</workbook>
